@@ -142,6 +142,23 @@
       btn_send: "Senden",
     },
   };
+  function sendEmail() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink =
+      "mailto:nisaanth2000@gmail.com" +
+      "?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(
+        "Name: " + name + "\n" + "Email: " + email + "\n\n" + message
+      );
+
+    window.location.href = mailtoLink;
+  }
 
   function applyLang(lang) {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
