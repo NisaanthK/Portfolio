@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio | Nisaanth</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,59 +26,82 @@
         <div class="left-header">
           <div class="h-shape"></div>
           <div class="image">
-            <img src="img/prof3.jpeg" alt="" />
+            <img src="img/prof3.jpeg" alt="Nisaanth photo" />
           </div>
         </div>
         <div class="right-header">
           <h1 class="name">
-            Hello, <span> I'm Nisaanth Kulandaivel Prabu</span>
+            <span>Hello,</span>
+            <span>I am</span>
+            <span> Nisaanth Kulandaivel Prabu</span>
           </h1>
-          <p>
-            As a front-end developer with a passion for creating
-            exceptional user experiences, I am ready to take my career to the
-            next level by embracing the challenges of becoming a full-stack
-            developer. I've done remote work for my previous company and collaborated with other team members. Looking for an opportunity to apply my skills and knowledge
+
+          <p data-i18n="hero_desc">
+            Full-Stack Developer (Angular + NestJS) with experience building a
+            real-time Condition Monitoring system for industrial machines. I
+            worked on the end-to-end flow: Angular UI, REST APIs, WebSocket
+            streaming, time-series data in InfluxDB and visualization. Currently
+            expanding AI skills and improving German (A2 → B1).
           </p>
+
           <div class="btn-con">
-            <a href="" class="main-btn">
-              <span class="btn-text">Get in Touch</span>
-              <span class="btn-icon"></span>
+            <a href="#contact" class="main-btn" data-scroll="contact">
+              <span class="btn-text" data-i18n="btn_contact">Get in Touch</span>
+              <span class="btn-icon"><i class="fas fa-envelope-open"></i></span>
             </a>
           </div>
         </div>
       </div>
     </header>
     <main>
+      <!-- ABOUT -->
       <section class="container about" id="about">
         <div class="main-title">
-          <h2>About <span>me</span></h2>
+          <h2>
+            <span data-i18n="about_title_1">About</span>
+            <span data-i18n="about_title_2">me</span>
+          </h2>
         </div>
         <div class="about-container">
           <div class="left-about">
-            <p style="text-align: center;">
-              Over the past year, I have actively worked as a front-end developer, specializing in HTML, CSS, and JavaScript. This
-              experience has allowed me to develop proficiency in building
-              user-friendly and visually appealing web applications and I am
-              highly passionate towards Software development. 
-              <br />
-              <br />
-              Now, I am actively enrolled master student at Hochschule Hof and eagerly searching for an werkstudent/internship in a company to get improve my practical knowledge and to get a great exposure in workspace.
-              <br />
-              I like to code things from scratch and enjoy bringing ideas to life inthe browser and learning mistakes everyday.
-              <br/>
-              <h3>Achievement</h3>
-              <p>One of the Freshworks Developer Community for providing contribution via solutions, helpful feedback and discussion for the development team</p>
-              <h3>Certification</h3>
-              <p> 
-                IBM CE- Enterprise Mobile Application Development using IBM Work light (2019),
-                Compeletion Certificate of HTML, CSS, JS from Great Learning Platform (2021),<br/>
-                Completion of AWS Academy Cloud Foundations (June 2023),<br/>
-                Complete Web Development Bootcamp (2023) - present </p>
-          
+            <p data-i18n="about_text">
+              I am a software developer focused on web-based applications.
+              During my thesis + internship, I built a real-time Condition
+              Monitoring Dashboard for thermoform machines. The system included
+              an Angular frontend, a NestJS backend, and InfluxDB for
+              time-series sensor data. I implemented APIs and WebSocket
+              streaming, handled data querying/processing, and created
+              dashboards for machine KPIs and trend visualization. I am now
+              looking for a Junior Developer / Full-Stack role where I can
+              contribute to production systems and keep improving.
             </p>
+
+            <h3 data-i18n="about_focus_title">What I am strong at</h3>
+            <ul class="about-points">
+              <li data-i18n="about_focus_1">
+                Angular UI development (components, routing, state, responsive
+                layouts)
+              </li>
+              <li data-i18n="about_focus_2">
+                Backend integration with NestJS (REST APIs, auth basics,
+                validation)
+              </li>
+              <li data-i18n="about_focus_3">
+                Time-series data handling with InfluxDB (queries, aggregation,
+                KPIs)
+              </li>
+              <li data-i18n="about_focus_4">
+                Docker, Git/GitLab, Jira/Confluence workflow
+              </li>
+            </ul>
+
             <div class="btn-con">
-              <a href="https://drive.google.com/drive/folders/1O2w1m6qUP6FTU0nvkHJOUqPkNIW5LCRX?usp=sharing" class="main-btn">
-                <span class="btn-text">View CV</span>
+              <a
+                href="https://drive.google.com/file/d/1eHqjDDkXTneHmhdK9rMCWvVns2C6GQVD/view?usp=sharing"
+                class="main-btn"
+                target="_blank"
+              >
+                <span class="btn-text" data-i18n="btn_cv">View CV</span>
                 <span class="btn-icon"><i class="fas fa-download"></i></span>
               </a>
             </div>
@@ -86,17 +109,14 @@
           <div class="right-about">
             <div class="about-item">
               <div class="abt-text">
-                <p class="large-text">3+</p>
-                <p class="small-text">
-                  Projects <br />
-                  Completed
-                </p>
+                <p class="large-text">4+</p>
+                <p class="small-text" data-i18n="stat_1">Projects<br />Built</p>
               </div>
             </div>
             <div class="about-item">
               <div class="abt-text">
-                <p class="large-text">1</p>
-                <p class="small-text">
+                <p class="large-text">1+</p>
+                <p class="small-text" data-i18n="stat_2">
                   Year of <br />
                   experience
                 </p>
@@ -104,236 +124,301 @@
             </div>
           </div>
         </div>
+
+        <!-- SKILLS -->
         <div class="about-stats">
-          <h4 class="stat-title">My Skills</h4>
+          <h4 class="stat-title" data-i18n="skills_title">My Skills</h4>
           <div class="progress-bars">
             <div class="progress-bar">
-              <p class="prog-title">html5</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="html"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">css3</p>
-              <div class="progress-con">
-                <p class="prog-text">95%</p>
-                <div class="progress">
-                  <span class="css"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">javascript</p>
-              <div class="progress-con">
-                <p class="prog-text">75%</p>
-                <div class="progress">
-                  <span class="js"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">ReactJS</p>
-              <div class="progress-con">
-                <p class="prog-text">50%</p>
-                <div class="progress">
-                  <span class="react"></span>
-                </div>
-              </div>
-            </div>
-            <div class="progress-bar">
-              <p class="prog-title">SCSS</p>
+              <p class="prog-title">Angular</p>
               <div class="progress-con">
                 <p class="prog-text">80%</p>
-                <div class="progress">
-                  <span class="node"></span>
-                </div>
+                <div class="progress"><span class="angular"></span></div>
               </div>
             </div>
             <div class="progress-bar">
-              <p class="prog-title">NodeJS</p>
+              <p class="prog-title">TypeScript</p>
               <div class="progress-con">
-                <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="node"></span>
-                </div>
+                <p class="prog-text">75%</p>
+                <div class="progress"><span class="ts"></span></div>
               </div>
             </div>
             <div class="progress-bar">
-              <p class="prog-title">Java</p>
+              <p class="prog-title">NestJS / Node.js</p>
               <div class="progress-con">
                 <p class="prog-text">70%</p>
-                <div class="progress">
-                  <span class="python"></span>
-                </div>
+                <div class="progress"><span class="node"></span></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">InfluxDB</p>
+              <div class="progress-con">
+                <p class="prog-text">65%</p>
+                <div class="progress"><span class="influx"></span></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">HTML/CSS/SCSS</p>
+              <div class="progress-con">
+                <p class="prog-text">85%</p>
+                <div class="progress"><span class="css"></span></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Python (Learning)</p>
+              <div class="progress-con">
+                <p class="prog-text">45%</p>
+                <div class="progress"><span class="python"></span></div>
               </div>
             </div>
           </div>
         </div>
-        <h4 class="stat-title">My Education</h4>
+
+        <!-- EDUCATION -->
+        <h4 class="stat-title" data-i18n="edu_title">My Education</h4>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2022 - present</p>
-            <h5>Master program in Software Engineering for Industrial Application (M.Eng.) <span> - Hof University of Applied Sciences, Bavaria, Germany </span></h5>
-            <p>
-              Advance Programming in Java (Data structure, Cryptography), 
-              Concept and tools for application development, 
-              Internet of Things, 
-              Average grade: 2,4 (German grading scale). 
+            <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+            <p class="tl-duration">2022 - 2025</p>
+            <h5 data-i18n="edu_1_title">
+              M.Eng. Software Engineering for Industrial Applications
+              <span> - Hochschule Hof, Germany</span>
+            </h5>
+            <p data-i18n="edu_1_text">
+              Focus: Web development, IoT, software engineering. Thesis:
+              Real-time condition monitoring system.
             </p>
           </div>
+
           <div class="timeline-item">
-            <div class="tl-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
+            <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
             <p class="tl-duration">2017 - 2021</p>
-            <h5>Bachelors in Computer Science Engineering B.E. <span> - PSNA College of Engineering and Technology, Tamil Nadu, India </span></h5>
-            <p>
-                Software Design and Software Development,
-                App Development Principles,
-                Database management, 
-                Average grade: 7.66 (out of 10). 
+            <h5 data-i18n="edu_2_title">
+              B.E. Computer Science Engineering
+              <span> - PSNA College of Engineering and Technology, India</span>
+            </h5>
+            <p data-i18n="edu_2_text">
+              Focus: Programming, databases, software development fundamentals.
             </p>
           </div>
-    
+        </div>
+        <!-- EXPERIENCE -->
+        <h4 class="stat-title" data-i18n="exp_title">Experience</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
+            <p class="tl-duration">04/2024 - 03/2025</p>
+            <h5 data-i18n="exp_1_title">
+              Master Thesis – Real-time Condition Monitoring Dashboard
+              <span> - Kiefel GmbH (Germany)</span>
+            </h5>
+            <p data-i18n="exp_1_text">
+              Built an Angular + NestJS system for real-time machine monitoring.
+              Implemented data ingestion/simulation, InfluxDB queries,
+              dashboards (KPIs, trends), and streaming updates (WebSockets).
+              Worked with Docker and GitLab workflow.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
+            <p class="tl-duration">10/2023 - 03/2024</p>
+            <h5 data-i18n="exp_2_title">
+              Full-Stack Developer Intern (Angular / NestJS)
+              <span> - Kiefel GmbH (Germany)</span>
+            </h5>
+            <p data-i18n="exp_2_text">
+              Developed UI modules, integrated REST APIs, improved dashboard
+              usability, and supported backend features. Collaborated via
+              Jira/Confluence and GitLab (branches + merge requests).
+            </p>
+          </div>
+        </div>
       </section>
+
+      <!-- PORTFOLIO -->
       <section class="container" id="portfolio">
         <div class="main-title">
-          <h2>My <span>Work</span></h2>
+          <h2 data-i18n="work_title">My <span>Work</span></h2>
         </div>
-      <br/>
-        <p class="port-text">
-          Here are some of my work that I've done
+
+        <br />
+        <p class="port-text" data-i18n="work_text">
+          Here are some projects I’ve worked on recently.
         </p>
         <div class="portfolios">
+          <!-- 1) Kiefel Dashboard -->
           <div class="portfolio-item">
             <div class="image">
-              <img src="img/Crown.jpg" alt="" />
+              <!-- Add a screenshot image later -->
+              <img
+                src="img/kiefel_gmbh_logo.jpg"
+                alt="Condition Monitoring Dashboard"
+              />
             </div>
             <div class="hover-items">
-              <h3>A Clothing Website</h3>
+              <h3 data-i18n="p1_title">Condition Monitoring Dashboard</h3>
+              <p data-i18n="p1_sub">
+                Angular • NestJS • InfluxDB • WebSockets • Grafana/Charts
+              </p>
               <div class="icons">
-                <a href="https://ecommercegit.netlify.app/" class="icon">
-                  <i class="fab fa-github"></i>
+                <a href="#" class="icon" title="Company project (private)">
+                  <i class="fas fa-lock"></i>
                 </a>
-          
               </div>
             </div>
           </div>
+
+          <!-- 2) AI Chat Dashboard -->
           <div class="portfolio-item">
             <div class="image">
-              <img src="img/LnD.png" alt="" />
+              <img src="img/chatbot.avif" alt="AI Chat Dashboard" />
             </div>
             <div class="hover-items">
-              <h3> A Lost and Found 
-                App </h3>
+              <h3 data-i18n="p2_title">AI Chat Dashboard (WIP)</h3>
+              <p data-i18n="p2_sub">
+                Angular • Chat UI • mock responses now • OpenAI integration next
+              </p>
               <div class="icons">
-                <a href="#" class="icon">
+                <a
+                  href="https://github.com/YOUR_GITHUB/AIchat-Dashboard"
+                  class="icon"
+                  target="_blank"
+                >
                   <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="icon">
-                  <i class="fab fa-envelope-open"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3) AI Interview Q&A -->
+          <div class="portfolio-item">
+            <div class="image">
+              <img
+                src="img/AI Job search logo.png"
+                alt="AI Interview Job Search Assistant - IN PROGRESS"
+              />
+            </div>
+            <div class="hover-items">
+              <h3 data-i18n="p3_title">AI Interview Q&A Generator</h3>
+              <p data-i18n="p3_sub">
+                Role-based Q&A • skill gaps • export notes
+              </p>
+              <div class="icons">
+                <a
+                  href="https://github.com/YOUR_GITHUB/ai-interview-qa"
+                  class="icon"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
                 </a>
               </div>
             </div>
           </div>
-          
-          <p>The Ecommerce web application is done in December 2021 to learn and to build an interactive Web Interface using Netlify an opensource environment to build web applications.</p>
-          <br/>
-          <p>The Lost and Found Application is developed as a project submission to my University in Jan 2023 using Android Studio, Firebase, Java.</p>
-          </div>
-      </section>
-      <section class="container" id="blogs">
-        <div class="blogs-content">
-          <div class="main-title">
-            <h2><span>Future </span><span class="bg-text">My Projects</span></h2>
-          </div>
-          <div class="blogs">
-            <div class="blog">
-              <img src="img/insta.png" alt="" />
-              <div class="blog-text">
-                <h4>Instagram feed</h4>
-                <p>
-                  Next level plug and play chassis systems for custom do it-yourself lightsaber build - Instagram web app.
-                </p>
+
+          <!-- 4) Ecommerce (old) -->
+          <div class="portfolio-item">
+            <div class="image">
+              <img src="img/Crown.jpg" alt="Ecommerce Website" />
+            </div>
+            <div class="hover-items">
+              <h3 data-i18n="p4_title">Ecommerce UI (Learning)</h3>
+              <div class="icons">
+                <a
+                  href="https://ecommercegit.netlify.app/"
+                  class="icon"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <div class="blog">
-              <img src="img/Ajio.png" alt="" />
-              <div class="blog-text">
-                <h4>Cloned E-commerce platform</h4>
-                <p>
-                  Specifically Cloned e-commerce platform webpages replicate the design and functionality of existing successful online retail platforms.
-                </p>
+          </div>
+
+          <!-- 5) Lost & Found -->
+          <div class="portfolio-item">
+            <div class="image">
+              <img
+                src="img/LnD.png"
+                alt="Lost and Found App Academic Project"
+              />
+            </div>
+            <div class="hover-items">
+              <h3 data-i18n="p5_title">Lost & Found App Academic Project</h3>
+              <p data-i18n="p5_sub">Android Studio • Java • Firebase</p>
+              <div class="icons">
+                <a href="#" class="icon" title="Add GitHub link later">
+                  <i class="fab fa-github"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
+
+        <p class="port-extra" data-i18n="work_extra">
+          I can share code samples, architecture, and implementation details on
+          request.
+        </p>
       </section>
+
+      <!-- CONTACT -->
       <section class="container contact" id="contact">
         <div class="contact-container">
           <div class="main-title">
-            <h2>Contact <span>Me</span></h2>
+            <h2 data-i18n="contact_title">Contact <span>Me</span></h2>
           </div>
+
           <div class="contact-content-con">
             <div class="left-contact">
-              <p>Thanks for taking the time to reach out. How can I help you today?</p>
-              <br/>
-              <p>Email:   <a href="nisaanthkulandaivelprabu@gmail.com">nisaanthkulandaivelprabu@gmail.com</a></p>
-              <p>Mobile No:  (+49)15510425397 </p>
-              <p><Address>Fabrikziele 26/2, Room No. 28, Hof, Bavaria, Germany</Address></p>
-              <p>LinkedIn:   <a href="https://www.linkedin.com/in/nisaanthkulandaivelprabu/">nisaanthkulandaivelprabu</a></p>
-              
-              <div class="contact-info">
-                <div class="contact-item">
-                  <div class="icon">
-                    
-                  </div>
-                  
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    
-                  </div>
-                  <p>
-                   
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    
-                  
-                  </div>
-                <div>
-                  
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    
-                    
-                  </div>
-                  <p>
-                    
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                  
-                    
-                  </div>
-                 
-                </div>
-                
-              </div>
+              <p data-i18n="contact_text">
+                Thanks for checking my portfolio. If you’re hiring or can refer
+                me, feel free to reach out.
+              </p>
 
+              <br />
+              <p>
+                Email:
+                <a href="mailto:nisaanth2000@gmail.com"
+                  >nisaanth2000@gmail.com</a
+                >
+              </p>
+
+              <p>Mobile: <a href="tel:+4915510425397">+49 155 10425397</a></p>
+
+              <p data-i18n="contact_loc">Location: Stuttgart, Germany</p>
+
+              <p>
+                LinkedIn:
+                <a
+                  href="https://www.linkedin.com/in/nisaanthkulandaivelprabu/"
+                  target="_blank"
+                  >nisaanthkulandaivelprabu</a
+                >
+              </p>
+
+              <div class="contact-icons">
+                <div class="contact-icon">
+                  <a
+                    href="https://www.linkedin.com/in/nisaanthkulandaivelprabu/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+
+                  <a href="https://github.com/" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+
+                  <a href="mailto:nisaanth2000@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
             </div>
+
             <div class="right-contact">
-              <form action="" class="contact-form">
+              <!-- keep your existing form UI -->
+              <form action="#" class="contact-form" onsubmit="return false;">
                 <div class="input-control i-c-2">
                   <input type="text" required placeholder="YOUR NAME" />
                   <input type="email" required placeholder="YOUR EMAIL" />
@@ -343,36 +428,20 @@
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
-                    id=""
                     cols="15"
                     rows="8"
                     placeholder="Message Here..."
                   ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <a href="" class="main-btn">
-                    <span class="btn-text">Submit</span>
+                  <a href="mailto:nisaanth2000@gmail.com" class="main-btn">
+                    <span class="btn-text" data-i18n="btn_send">Send</span>
                     <span class="btn-icon"
-                      >
+                      ><i class="fas fa-paper-plane"></i
                     ></span>
                   </a>
                 </div>
               </form>
-            </div>
-            <div class="contact-icons">
-              <div class="contact-icon">
-                <a href="www.facebook.com" target="_blank">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-      
-                <a href="#" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -380,17 +449,16 @@
     </main>
 
     <div class="controls">
+      <div class="lang-switch">
+        <button class="lang-btn active-lang" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+      </div>
       <div class="control active-btn" data-id="home">
         <i class="fas fa-home"></i>
       </div>
-      <div class="control" data-id="about">
-        <i class="fas fa-user"></i>
-      </div>
+      <div class="control" data-id="about"><i class="fas fa-user"></i></div>
       <div class="control" data-id="portfolio">
         <i class="fas fa-briefcase"></i>
-      </div>
-      <div class="control" data-id="blogs">
-        <i class="far fa-newspaper"></i>
       </div>
       <div class="control" data-id="contact">
         <i class="fas fa-envelope-open"></i>
