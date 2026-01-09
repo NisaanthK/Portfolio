@@ -20,19 +20,22 @@
     });
   });
 
-  // ---- EN / DE TRANSLATIONS ----
   const dict = {
     en: {
       hero_hello: "Hello,",
       hero_im: "I’m",
+
       hero_desc:
-        "Full-Stack Developer (Angular + NestJS) with experience building a real-time Condition Monitoring system for industrial machines. I worked on the end-to-end flow: Angular UI, REST APIs, WebSocket streaming, time-series data in InfluxDB and visualization. Currently expanding AI skills and improving German (A2 → B1).",
+        "Junior Full-Stack Developer (Angular + NestJS) with experience in building a real-time Monitoring system for industrial machines. I worked on the end-to-end flow: Angular UI, REST APIs, API testing, connecting with backend, used time-series data in InfluxDB and visualization.\n\nCurrently building foundational knowledge in LLMs, prompt engineering, and effective AI usage to improve development productivity and code quality, also improving German (A2 → B1).",
+
       btn_contact: "Get in Touch",
       about_title_1: "About",
       about_title_2: "me",
+
       about_text:
-        "I’m a software developer focused on web-based applications. During my thesis + internship, I built a real-time Condition Monitoring Dashboard for thermoform machines. The system included an Angular frontend, a NestJS backend, and InfluxDB for time-series sensor data. I implemented APIs and WebSocket streaming, handled data querying/processing, and created dashboards for machine KPIs and trend visualization. I’m now looking for a Junior Developer / Full-Stack role where I can contribute to production systems and keep improving.",
-      about_focus_title: "What I’m strong at",
+        "I am a developer focused on web-based applications. During my thesis + internship, I built a real-time Condition Monitoring Dashboard for thermoform machines. The system included an Angular frontend, a NestJS backend, and InfluxDB for time-series sensor data. I implemented and worked on APIs, handled data querying/processing, and created dashboards for machine KPIs and trend visualization. I am now looking for a Junior Developer / Full-Stack role where I can contribute to production systems and keep improving.",
+
+      about_focus_title: "What I am strong at",
       about_focus_1:
         "Angular UI development (components, routing, state, responsive layouts)",
       about_focus_2:
@@ -41,7 +44,7 @@
         "Time-series data handling with InfluxDB (queries, aggregation, KPIs)",
       about_focus_4: "Docker, Git/GitLab, Jira/Confluence workflow",
       btn_cv: "View CV",
-      stat_1: "Projects\nCompleted",
+      stat_1: "Projects\nBuilt",
       stat_2: "Year of\nexperience",
       skills_title: "My Skills",
       edu_title: "My Education",
@@ -69,30 +72,34 @@
       p2_title: "AI Chat Dashboard (WIP)",
       p2_sub:
         "Angular • Chat UI • mock responses now • OpenAI integration next",
-      p3_title: "AI Interview Q&A Generator (WIP)",
+      p3_title: "AI Interview Job Search Assistant - IN PROGRESS",
       p3_sub: "Role-based Q&A • skill gaps • export notes",
       p4_title: "Ecommerce UI (Learning)",
       p5_title: "Lost & Found App",
       p5_sub: "Android Studio • Java • Firebase",
       work_extra:
-        "I can share code samples, architecture, and implementation details on request.",
+        "I can explain and share the experience about the architecture, and implementation details on request.",
       contact_title: "Contact",
       contact_text:
         "Thanks for checking my portfolio. If you’re hiring or can refer me, feel free to reach out.",
-      contact_loc: "Location: Stuttgart, Germany",
+      contact_loc: "Location: 73760 Tuffweg 3, Ostfildern, Germany",
       btn_send: "Send",
     },
 
     de: {
       hero_hello: "Hallo,",
       hero_im: "ich bin",
+
       hero_desc:
-        "Full-Stack Developer (Angular + NestJS) mit Erfahrung im Aufbau eines Echtzeit-Condition-Monitoring-Systems für industrielle Maschinen. Ich habe den End-to-End-Flow umgesetzt: Angular UI, REST APIs, WebSocket-Streaming, Zeitreihendaten in InfluxDB und Visualisierung. Aktuell erweitere ich meine KI-Skills und verbessere mein Deutsch (A2 → B1).",
+        "Junior Full-Stack Developer (Angular + NestJS) mit Erfahrung in der Entwicklung eines Echtzeit-Monitoring-Systems für industrielle Maschinen. Ich habe den End-to-End-Flow umgesetzt: Angular UI, REST APIs, API-Tests, Backend-Anbindung sowie Zeitreihendaten in InfluxDB und Visualisierung.\n\nAktuell baue ich Grundlagen in LLMs, Prompt Engineering und effektiver KI-Nutzung auf, um Entwicklung, Produktivität und Codequalität zu verbessern – außerdem verbessere ich mein Deutsch (A2 → B1).",
+
       btn_contact: "Kontakt",
       about_title_1: "Über",
       about_title_2: "mich",
+
       about_text:
-        "Ich bin Softwareentwickler mit Fokus auf webbasierte Anwendungen. Während meiner Thesis + Internship habe ich ein Echtzeit-Condition-Monitoring-Dashboard für Thermoform-Maschinen entwickelt. Das System umfasst ein Angular-Frontend, ein NestJS-Backend und InfluxDB für Zeitreihen-Sensordaten. Ich habe APIs und WebSocket-Streaming umgesetzt, Datenabfragen/Verarbeitung implementiert und Dashboards für KPIs und Trends erstellt. Jetzt suche ich eine Junior Developer / Full-Stack Rolle in der ich produktive Systeme mitentwickeln kann.",
+        "Ich bin Entwickler mit Fokus auf webbasierte Anwendungen. Während meiner Thesis + Internship habe ich ein Echtzeit-Condition-Monitoring-Dashboard für Thermoform-Maschinen entwickelt. Das System umfasst ein Angular-Frontend, ein NestJS-Backend und InfluxDB für Zeitreihen-Sensordaten. Ich habe an APIs gearbeitet, Datenabfragen/Verarbeitung umgesetzt und Dashboards für Maschinen-KPIs sowie Trend-Visualisierung erstellt. Jetzt suche ich eine Junior Developer / Full-Stack Rolle, in der ich produktive Systeme mitentwickeln und mich weiter verbessern kann.",
+
       about_focus_title: "Meine Stärken",
       about_focus_1:
         "Angular UI Entwicklung (Components, Routing, State, Responsive)",
@@ -128,38 +135,20 @@
       p2_title: "AI Chat Dashboard (in Arbeit)",
       p2_sub:
         "Angular • Chat UI • aktuell Mock • OpenAI Integration als nächstes",
-      p3_title: "AI Interview Q&A Generator (in Arbeit)",
+      p3_title: "AI Interview Job Search Assistant - IN PROGRESS",
       p3_sub: "Rollenbasierte Fragen • Skill-Gaps • Export",
       p4_title: "Ecommerce UI (Lernprojekt)",
       p5_title: "Lost & Found App",
       p5_sub: "Android Studio • Java • Firebase",
       work_extra:
-        "Gerne teile ich Code-Beispiele, Architektur und Details auf Anfrage.",
+        "Ich kann die Architektur und Implementierungsdetails auf Anfrage erklären und teilen.",
       contact_title: "Kontakt",
       contact_text:
         "Danke fürs Anschauen. Wenn ihr einstellt oder mich empfehlen könnt, meldet euch gerne.",
-      contact_loc: "Ort: Stuttgart, Deutschland",
+      contact_loc: "Ort: 73760 Tuffweg 3, Ostfildern, Deutschland",
       btn_send: "Senden",
     },
   };
-  function sendEmail() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
-
-    const mailtoLink =
-      "mailto:nisaanth2000@gmail.com" +
-      "?subject=" +
-      encodeURIComponent(subject) +
-      "&body=" +
-      encodeURIComponent(
-        "Name: " + name + "\n" + "Email: " + email + "\n\n" + message
-      );
-
-    window.location.href = mailtoLink;
-  }
-
   function applyLang(lang) {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
