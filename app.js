@@ -101,7 +101,7 @@
       contact_title: "Contact",
       contact_text:
         "Thanks for checking my portfolio. If you’re hiring or can refer me, feel free to reach out.",
-      contact_loc: "Location: 73760 Tuffweg 3, Ostfildern, Germany",
+      contact_loc: "Location: Stuttgart Region, Germany",
       btn_send: "Send",
     },
 
@@ -168,7 +168,7 @@
       contact_title: "Kontakt",
       contact_text:
         "Danke fürs Anschauen. Wenn ihr einstellt oder mich empfehlen könnt, meldet euch gerne.",
-      contact_loc: "Ort: 73760 Tuffweg 3, Ostfildern, Deutschland",
+      contact_loc: "Ort: Stuttgart Region, Deutschland",
       btn_send: "Senden",
     },
   };
