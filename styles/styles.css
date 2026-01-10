@@ -68,9 +68,11 @@ section {
 
 .container {
   display: none;
-  transform: translateY(-100%) scale(0);
-  transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
+}
+
+.container.active {
+  display: block;
 }
 
 .active {
@@ -123,7 +125,31 @@ section {
 .controls .active-btn i {
   color: var(--color-white);
 }
+/* Round language control (EN/DE) */
+.controls .lang-control {
+  border: none;
+  outline: none;
+  background-color: var(--color-grey-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.controls .lang-control .lang-label {
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: var(--color-grey-2);
+  pointer-events: none;
+}
+
+/* When active language (optional visual) */
+.controls .lang-control.is-de {
+  background-color: var(--color-secondary);
+}
+.controls .lang-control.is-de .lang-label {
+  color: var(--color-primary);
+}
 .theme-btn {
   top: 5%;
   right: 3%;
@@ -741,7 +767,18 @@ section {
   .controls .control {
     margin: 1rem 0.3rem;
   }
-
+ .controls .lang-control {
+    position: fixed;
+    top: 12px;
+    right: 86px; 
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+  }
+  .controls .lang-control .lang-label {
+    font-size: 0.9rem;
+  }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -1,16 +1,23 @@
 (function () {
-  [...document.querySelectorAll(".control")].forEach((button) => {
-    button.addEventListener("click", function () {
-      document.querySelector(".active-btn").classList.remove("active-btn");
-      this.classList.add("active-btn");
-      document.querySelector(".active").classList.remove("active");
-      document.getElementById(button.dataset.id).classList.add("active");
-      window.scrollTo({ top: 0, behavior: "smooth" });
+  const sectionButtons = document.querySelectorAll(".control[data-id]");
+
+  sectionButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const currentActiveBtn = document.querySelector(".control.active-btn");
+      if (currentActiveBtn) currentActiveBtn.classList.remove("active-btn");
+      btn.classList.add("active-btn");
+
+      const currentActiveSection = document.querySelector(".container.active");
+      if (currentActiveSection) currentActiveSection.classList.remove("active");
+
+      const targetId = btn.dataset.id;
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) targetSection.classList.add("active");
+
+      window.scrollTo(0, 0);
     });
   });
-  document.querySelector(".theme-btn").addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-  });
+
   document.querySelectorAll("[data-scroll]").forEach((el) => {
     el.addEventListener("click", (e) => {
       e.preventDefault();
@@ -20,11 +27,16 @@
     });
   });
 
+  const themeBtn = document.querySelector(".theme-btn");
+  if (themeBtn) {
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+    });
+  }
+
+  // I18N DICTIONARY
   const dict = {
     en: {
-      hero_hello: "Hello,",
-      hero_im: "I’m",
-
       hero_desc:
         "Junior Full-Stack Developer (Angular + NestJS) with experience in building a real-time Monitoring system for industrial machines. I worked on the end-to-end flow: Angular UI, REST APIs, API testing, connecting with backend, used time-series data in InfluxDB and visualization.\n\nCurrently building foundational knowledge in LLMs, prompt engineering, and effective AI usage to improve development productivity and code quality, also improving German (A2 → B1).",
 
@@ -43,11 +55,13 @@
       about_focus_3:
         "Time-series data handling with InfluxDB (queries, aggregation, KPIs)",
       about_focus_4: "Docker, Git/GitLab, Jira/Confluence workflow",
+
       btn_cv: "View CV",
       stat_1: "Projects\nBuilt",
       stat_2: "Year of\nexperience",
       skills_title: "My Skills",
       edu_title: "My Education",
+
       edu_1_title:
         "M.Eng. Software Engineering for Industrial Applications - Hochschule Hof, Germany",
       edu_1_text:
@@ -56,6 +70,7 @@
         "B.E. Computer Science Engineering - PSNA College of Engineering and Technology, India",
       edu_2_text:
         "Focus: Programming, databases, software development fundamentals.",
+
       exp_title: "Experience",
       exp_1_title:
         "Master Thesis – Real-time Condition Monitoring Dashboard - Kiefel GmbH (Germany)",
@@ -65,8 +80,10 @@
         "Full-Stack Developer Intern (Angular / NestJS) - Kiefel GmbH (Germany)",
       exp_2_text:
         "Developed UI modules, integrated REST APIs, improved dashboard usability, and supported backend features. Collaborated via Jira/Confluence and GitLab (branches + merge requests).",
+
       work_title: "My Work",
       work_text: "Here are some projects I’ve worked on recently.",
+
       p1_title: "Condition Monitoring Dashboard",
       p1_sub: "Angular • NestJS • InfluxDB • WebSockets • Grafana/Charts",
       p2_title: "AI Chat Dashboard (WIP)",
@@ -77,8 +94,10 @@
       p4_title: "Ecommerce UI (Learning)",
       p5_title: "Lost & Found App",
       p5_sub: "Android Studio • Java • Firebase",
+
       work_extra:
         "I can explain and share the experience about the architecture, and implementation details on request.",
+
       contact_title: "Contact",
       contact_text:
         "Thanks for checking my portfolio. If you’re hiring or can refer me, feel free to reach out.",
@@ -87,9 +106,6 @@
     },
 
     de: {
-      hero_hello: "Hallo,",
-      hero_im: "ich bin",
-
       hero_desc:
         "Junior Full-Stack Developer (Angular + NestJS) mit Erfahrung in der Entwicklung eines Echtzeit-Monitoring-Systems für industrielle Maschinen. Ich habe den End-to-End-Flow umgesetzt: Angular UI, REST APIs, API-Tests, Backend-Anbindung sowie Zeitreihendaten in InfluxDB und Visualisierung.\n\nAktuell baue ich Grundlagen in LLMs, Prompt Engineering und effektiver KI-Nutzung auf, um Entwicklung, Produktivität und Codequalität zu verbessern – außerdem verbessere ich mein Deutsch (A2 → B1).",
 
@@ -108,17 +124,20 @@
       about_focus_3:
         "Zeitreihendaten mit InfluxDB (Queries, Aggregation, KPIs)",
       about_focus_4: "Docker, Git/GitLab, Jira/Confluence Workflow",
+
       btn_cv: "Lebenslauf",
       stat_1: "Projekte\ngebaut",
       stat_2: "Jahr\nErfahrung",
       skills_title: "Skills",
       edu_title: "Ausbildung",
+
       edu_1_title: "M.Eng. Software Engineering - Hochschule Hof, Deutschland",
       edu_1_text:
         "Fokus: Webentwicklung, IoT, Software Engineering. Thesis: Echtzeit Condition Monitoring.",
       edu_2_title: "B.E. Computer Science Engineering - PSNA College, Indien",
       edu_2_text:
         "Fokus: Programmierung, Datenbanken, Grundlagen der Softwareentwicklung.",
+
       exp_title: "Erfahrung",
       exp_1_title:
         "Masterarbeit – Echtzeit Condition Monitoring Dashboard - Kiefel GmbH (Deutschland)",
@@ -128,8 +147,10 @@
         "Full-Stack Praktikum (Angular / NestJS) - Kiefel GmbH (Deutschland)",
       exp_2_text:
         "UI-Module entwickelt, REST APIs integriert, Dashboard-Usability verbessert, Backend-Features unterstützt. Zusammenarbeit über Jira/Confluence und GitLab (Branches + Merge Requests).",
+
       work_title: "Projekte",
       work_text: "Einige Projekte, an denen ich gearbeitet habe.",
+
       p1_title: "Condition Monitoring Dashboard",
       p1_sub: "Angular • NestJS • InfluxDB • WebSockets • Grafana/Charts",
       p2_title: "AI Chat Dashboard (in Arbeit)",
@@ -140,8 +161,10 @@
       p4_title: "Ecommerce UI (Lernprojekt)",
       p5_title: "Lost & Found App",
       p5_sub: "Android Studio • Java • Firebase",
+
       work_extra:
         "Ich kann die Architektur und Implementierungsdetails auf Anfrage erklären und teilen.",
+
       contact_title: "Kontakt",
       contact_text:
         "Danke fürs Anschauen. Wenn ihr einstellt oder mich empfehlen könnt, meldet euch gerne.",
@@ -149,21 +172,39 @@
       btn_send: "Senden",
     },
   };
+
   function applyLang(lang) {
+    const data = dict[lang] || dict.en;
+
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (dict[lang] && dict[lang][key]) el.textContent = dict[lang][key];
+      if (!key) return;
+
+      if (data[key]) {
+        el.textContent = data[key];
+      }
     });
 
-    document.querySelectorAll(".lang-btn").forEach((b) => {
-      b.classList.toggle("active-lang", b.dataset.lang === lang);
+    const langToggle = document.getElementById("langToggle");
+    if (langToggle) {
+      const label = langToggle.querySelector(".lang-label");
+      if (label) label.textContent = lang.toUpperCase();
+      langToggle.classList.toggle("is-de", lang === "de");
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem("lang", lang);
+  }
+
+  const langToggle = document.getElementById("langToggle");
+  if (langToggle) {
+    langToggle.addEventListener("click", () => {
+      const current = localStorage.getItem("lang") || "en";
+      const next = current === "en" ? "de" : "en";
+      applyLang(next);
     });
   }
 
-  document.querySelectorAll(".lang-btn").forEach((b) => {
-    b.addEventListener("click", () => applyLang(b.dataset.lang));
-  });
-
-  // default
-  applyLang("en");
+  const savedLang = localStorage.getItem("lang") || "en";
+  applyLang(savedLang);
 })();

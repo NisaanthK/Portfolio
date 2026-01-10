@@ -21,6 +21,7 @@
     />
   </head>
   <body class="main-content">
+    <!-- HOME -->
     <header class="container header active" id="home">
       <div class="header-content">
         <div class="left-header">
@@ -31,23 +32,17 @@
         </div>
         <div class="right-header">
           <h1 class="name">
-            <span>Hello,</span>
-            <span>I am</span>
+            <span data-i18n="hero_hello">Hello,</span>
+            <span data-i18n="hero_im">I’m</span>
             <span> Nisaanth Kulandaivel Prabu</span>
           </h1>
 
-          <p data-i18n="hero_desc">
-            Junior Full-Stack Developer (Angular + NestJS) with experience in building a
-            real-time Monitoring system for industrial machines. I
-            worked on the end-to-end flow: Angular UI, REST APIs, API testing, Connecting with backend, Used time-series data in InfluxDB and visualization. 
-            <br>
-            Currently building foundational knowledge in LLMs, 
-            prompt engineering, and effective AI usage to improve development productivity and code quality also improving German (A2 → B1).
-          </p>
+          <!--empty lines, space for content von dict -->
+          <p data-i18n="hero_desc"></p>
 
           <div class="btn-con">
             <a href="#contact" class="main-btn" data-scroll="contact">
-              <span class="btn-text" data-i18n="btn_contact">Get in Touch</span>
+              <span class="btn-text" data-i18n="btn_contact"></span>
               <span class="btn-icon"><i class="fas fa-envelope-open"></i></span>
             </a>
           </div>
@@ -59,67 +54,49 @@
       <section class="container about" id="about">
         <div class="main-title">
           <h2>
-            <span data-i18n="about_title_1">About</span>
-            <span data-i18n="about_title_2">me</span>
+            <span data-i18n="about_title_1"></span>
+            <span data-i18n="about_title_2"></span>
           </h2>
         </div>
         <div class="about-container">
           <div class="left-about">
-            <p data-i18n="about_text">
-              I am a developer focused on web-based applications.
-              During my thesis + internship, I built a real-time Condition
-              Monitoring Dashboard for thermoform machines. The system included
-              an Angular frontend, a NestJS backend, and InfluxDB for
-              time-series sensor data. I implemented and worked on APIs, handled data querying/processing, and created
-              dashboards for machine KPIs and trend visualization. I am now
-              looking for a Junior Developer / Full-Stack role where I can
-              contribute to production systems and keep improving.
-            </p>
+            <p data-i18n="about_text"></p>
 
-            <h3 data-i18n="about_focus_title">What I am strong at</h3>
+            <h3 data-i18n="about_focus_title"></h3>
             <ul class="about-points">
-              <li data-i18n="about_focus_1">
-                Angular UI development (components, routing, state, responsive
-                layouts)
-              </li>
-              <li data-i18n="about_focus_2">
-                Backend integration with NestJS (REST APIs, auth basics,
-                validation)
-              </li>
-              <li data-i18n="about_focus_3">
-                Time-series data handling with InfluxDB (queries, aggregation,
-                KPIs)
-              </li>
-              <li data-i18n="about_focus_4">
-                Docker, Git/GitLab, Jira/Confluence workflow
-              </li>
+              <li data-i18n="about_focus_1"></li>
+              <li data-i18n="about_focus_2"></li>
+              <li data-i18n="about_focus_3"></li>
+              <li data-i18n="about_focus_4"></li>
             </ul>
-<br>
+
+            <br />
+
             <div class="btn-con">
               <a
                 href="https://drive.google.com/file/d/1eHqjDDkXTneHmhdK9rMCWvVns2C6GQVD/view?usp=sharing"
                 class="main-btn"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                <span class="btn-text" data-i18n="btn_cv">View CV</span>
+                <span class="btn-text" data-i18n="btn_cv"></span>
                 <span class="btn-icon"><i class="fas fa-download"></i></span>
               </a>
             </div>
           </div>
+
           <div class="right-about">
             <div class="about-item">
               <div class="abt-text">
                 <p class="large-text">4+</p>
-                <p class="small-text" data-i18n="stat_1">Projects<br />Built</p>
+                <p class="small-text" data-i18n="stat_1"></p>
               </div>
             </div>
+
             <div class="about-item">
               <div class="abt-text">
                 <p class="large-text">1+</p>
-                <p class="small-text" data-i18n="stat_2">
-                  Year of <br />
-                  experience
-                </p>
+                <p class="small-text" data-i18n="stat_2"></p>
               </div>
             </div>
           </div>
@@ -127,7 +104,8 @@
 
         <!-- SKILLS -->
         <div class="about-stats">
-          <h4 class="stat-title" data-i18n="skills_title">My Skills</h4>
+          <h4 class="stat-title" data-i18n="skills_title"></h4>
+
           <div class="progress-bars">
             <div class="progress-bar">
               <p class="prog-title">Angular</p>
@@ -136,6 +114,7 @@
                 <div class="progress"><span class="angular"></span></div>
               </div>
             </div>
+
             <div class="progress-bar">
               <p class="prog-title">TypeScript</p>
               <div class="progress-con">
@@ -143,6 +122,7 @@
                 <div class="progress"><span class="ts"></span></div>
               </div>
             </div>
+
             <div class="progress-bar">
               <p class="prog-title">NestJS / Node.js</p>
               <div class="progress-con">
@@ -150,6 +130,7 @@
                 <div class="progress"><span class="node"></span></div>
               </div>
             </div>
+
             <div class="progress-bar">
               <p class="prog-title">InfluxDB</p>
               <div class="progress-con">
@@ -157,6 +138,7 @@
                 <div class="progress"><span class="influx"></span></div>
               </div>
             </div>
+
             <div class="progress-bar">
               <p class="prog-title">HTML/CSS/SCSS</p>
               <div class="progress-con">
@@ -164,6 +146,7 @@
                 <div class="progress"><span class="css"></span></div>
               </div>
             </div>
+
             <div class="progress-bar">
               <p class="prog-title">Python (Learning)</p>
               <div class="progress-con">
@@ -174,123 +157,97 @@
           </div>
         </div>
 
-        <!-- Educational Background -->
-        <h4 class="stat-title" data-i18n="edu_title">My Education</h4>
+        <!-- EDUCATION  -->
+        <h4 class="stat-title" data-i18n="edu_title"></h4>
         <div class="timeline">
           <div class="timeline-item">
             <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
             <p class="tl-duration">2022 - 2025</p>
-            <h5 data-i18n="edu_1_title">
-              M.Eng. Software Engineering for Industrial Applications
-              <span> - Hochschule Hof, Germany</span>
-            </h5>
-            <p data-i18n="edu_1_text">
-              Focus: Web development, IoT, software engineering. Thesis:
-              Real-time condition monitoring system.
-            </p>
+            <h5 data-i18n="edu_1_title"></h5>
+            <p data-i18n="edu_1_text"></p>
           </div>
 
           <div class="timeline-item">
             <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
             <p class="tl-duration">2017 - 2021</p>
-            <h5 data-i18n="edu_2_title">
-              B.E. Computer Science Engineering
-              <span> - PSNA College of Engineering and Technology, India</span>
-            </h5>
-            <p data-i18n="edu_2_text">
-              Focus: Programming, databases, software development fundamentals.
-            </p>
+            <h5 data-i18n="edu_2_title"></h5>
+            <p data-i18n="edu_2_text"></p>
           </div>
         </div>
-        <!-- Experience content-->
-        <h4 class="stat-title" data-i18n="exp_title">Experience</h4>
+
+        <!-- EXPERIENCE -->
+        <h4 class="stat-title" data-i18n="exp_title"></h4>
         <div class="timeline">
           <div class="timeline-item">
             <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
             <p class="tl-duration">04/2024 - 03/2025</p>
-            <h5 data-i18n="exp_1_title">
-              Master Thesis – Real-time Condition Monitoring Dashboard
-              <span> - Kiefel GmbH (Germany)</span>
-            </h5>
-            <p data-i18n="exp_1_text">
-              Built an Angular + NestJS system for real-time machine monitoring.
-              Implemented data ingestion/simulation, InfluxDB queries,
-              dashboards (KPIs, trends), and streaming updates (WebSockets).
-              Worked with Docker and GitLab workflow.
-            </p>
+            <h5 data-i18n="exp_1_title"></h5>
+            <p data-i18n="exp_1_text"></p>
           </div>
 
           <div class="timeline-item">
             <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
             <p class="tl-duration">10/2023 - 03/2024</p>
-            <h5 data-i18n="exp_2_title">
-              Full-Stack Developer Intern (Angular / NestJS)
-              <span> - Kiefel GmbH (Germany)</span>
-            </h5>
-            <p data-i18n="exp_2_text">
-              Developed UI modules, integrated REST APIs, improved dashboard
-              usability, and supported backend features. Collaborated via
-              Jira/Confluence and GitLab (branches + merge requests).
-            </p>
+            <h5 data-i18n="exp_2_title"></h5>
+            <p data-i18n="exp_2_text"></p>
           </div>
         </div>
       </section>
 
-      <!-- PORTFOLIO Main plate-->
+      <!-- Main Plate-->
       <section class="container" id="portfolio">
         <div class="main-title">
-          <h2 data-i18n="work_title">My <span>Work</span></h2>
+          <h2 data-i18n="work_title"></h2>
         </div>
 
         <br />
-        <p class="port-text" data-i18n="work_text">
-          Here are some projects I’ve worked on recently.
-        </p>
+
+        <p class="port-text" data-i18n="work_text"></p>
+
         <div class="portfolios">
-          <!-- Kiefel Condition Monitoring Dashboard worked during Master Thesis -->
+          <!-- Kiefel Monitoring Dashboard -->
           <div class="portfolio-item">
             <div class="image">
-              <img
-                src="img/kiefel_gmbh_logo.jpg"
-                alt="Condition Monitoring Dashboard"
-              />
+              <img src="img/kiefel_gmbh_logo.jpg" alt="Kiefel Project" />
             </div>
+
             <div class="hover-items">
-              <h3 data-i18n="p1_title">Condition Monitoring Dashboard</h3>
-              <p data-i18n="p1_sub">
-                Angular • NestJS • InfluxDB • WebSockets • Grafana/Charts
-              </p>
+              <h3 data-i18n="p1_title"></h3>
+              <p data-i18n="p1_sub"></p>
               <div class="icons">
                 <a href="#" class="icon" title="Company project (private)">
                   <i class="fas fa-lock"></i>
-                  <a
+                </a>
+
+                <a
                   href="https://nisaanthk.github.io/Condition-Monitoring/"
                   class="icon"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open project"
                 >
                   <i class="fab fa-github"></i>
                 </a>
-                
               </div>
             </div>
           </div>
 
-          <!-- AI Chat Dashboard -->
+          <!-- AI Chat dashboard focus on building AI agent-->
           <div class="portfolio-item">
             <div class="image">
               <img src="img/chatbot.avif" alt="AI Chat Dashboard" />
             </div>
+
             <div class="hover-items">
-              <h3 data-i18n="p2_title">AI Chat Dashboard (WIP)</h3>
-              <p data-i18n="p2_sub">
-                Angular • Chat UI • mock responses now • OpenAI integration next. Halfway through building a dashboard to interact with AI chatbots. The
-                UI is 50% done, currently working on integrating OpenAI APIs for dynamic.
-              </p>
+              <h3 data-i18n="p2_title"></h3>
+              <p data-i18n="p2_sub"></p>
               <div class="icons">
                 <a
                   href="https://github.com/YOUR_GITHUB/AIchat-Dashboard"
                   class="icon"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open GitHub"
                 >
                   <i class="fab fa-github"></i>
                 </a>
@@ -298,24 +255,25 @@
             </div>
           </div>
 
-          <!-- AI Interview Q&A -->
+          <!-- AI Interview work in progress-->
           <div class="portfolio-item">
             <div class="image">
               <img
                 src="img/AI Job search logo.png"
-                alt="AI Interview Job Search Assistant - IN PROGRESS"
+                alt="AI Interview Job Search Assistant"
               />
             </div>
+
             <div class="hover-items">
-              <h3 data-i18n="p3_title">AI Interview Job Search Assistant - IN PROGRESS</h3>
-              <p data-i18n="p3_sub">
-                Role-based Q&A • skill gaps • export notes
-              </p>
+              <h3 data-i18n="p3_title"></h3>
+              <p data-i18n="p3_sub"></p>
               <div class="icons">
                 <a
                   href="https://github.com/YOUR_GITHUB/ai-interview-qa"
                   class="icon"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open GitHub"
                 >
                   <i class="fab fa-github"></i>
                 </a>
@@ -323,18 +281,21 @@
             </div>
           </div>
 
-          <!-- Ecommerce (old) during bachelor -->
+          <!-- Ecommerce academic project -->
           <div class="portfolio-item">
             <div class="image">
               <img src="img/Crown.jpg" alt="Ecommerce Website" />
             </div>
+
             <div class="hover-items">
-              <h3 data-i18n="p4_title">Ecommerce UI (Learning)</h3>
+              <h3 data-i18n="p4_title"></h3>
               <div class="icons">
                 <a
                   href="https://ecommercegit.netlify.app/"
                   class="icon"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open website"
                 >
                   <i class="fas fa-external-link-alt"></i>
                 </a>
@@ -342,17 +303,15 @@
             </div>
           </div>
 
-          <!-- Lost & Found Project at Hof university -->
+          <!-- Lost & Found academic project-->
           <div class="portfolio-item">
             <div class="image">
-              <img
-                src="img/LnD.png"
-                alt="Lost and Found App Academic Project"
-              />
+              <img src="img/LnD.png" alt="Lost and Found App" />
             </div>
+
             <div class="hover-items">
-              <h3 data-i18n="p5_title">Lost & Found App Academic Project</h3>
-              <p data-i18n="p5_sub">Android Studio • Java • Firebase</p>
+              <h3 data-i18n="p5_title"></h3>
+              <p data-i18n="p5_sub"></p>
               <div class="icons">
                 <a href="#" class="icon" title="Add GitHub link later">
                   <i class="fab fa-github"></i>
@@ -361,28 +320,24 @@
             </div>
           </div>
         </div>
-<br>
-        <p class="port-extra" data-i18n="work_extra">
-          I can explain and share the experience about the architecture, and implementation details on
-          request.
-        </p>
+
+        <br />
+
+        <p class="port-extra" data-i18n="work_extra"></p>
       </section>
 
-      <!-- CONTACT Info -->
+      <!-- Contact details-->
       <section class="container contact" id="contact">
         <div class="contact-container">
           <div class="main-title">
-            <h2 data-i18n="contact_title">Contact <span>Me</span></h2>
+            <h2 data-i18n="contact_title"></h2>
           </div>
 
           <div class="contact-content-con">
             <div class="left-contact">
-              <p data-i18n="contact_text">
-                Thanks for checking my portfolio. If you’re hiring or can refer
-                me, feel free to reach out.
-              </p>
-
+              <p data-i18n="contact_text"></p>
               <br />
+
               <p>
                 Email:
                 <a href="mailto:nisaanth2000@gmail.com"
@@ -390,15 +345,19 @@
                 >
               </p>
 
-              <p>Mobile: <a href="tel:+4915510425397">+49 155 10425397</a></p>
+              <p>
+                Mobile:
+                <a href="tel:+4915510425397">+49 155 10425397</a>
+              </p>
 
-              <p data-i18n="contact_loc">Location: 73760 Tuffweg 3, Ostfildern , Germany</p>
+              <p data-i18n="contact_loc"></p>
 
               <p>
                 LinkedIn:
                 <a
                   href="https://www.linkedin.com/in/nisaanthkulandaivelprabu/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >nisaanthkulandaivelprabu</a
                 >
               </p>
@@ -408,15 +367,27 @@
                   <a
                     href="https://www.linkedin.com/in/nisaanthkulandaivelprabu/"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
                   >
                     <i class="fab fa-linkedin"></i>
                   </a>
 
-                  <a href="https://github.com/" target="_blank">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
                     <i class="fab fa-github"></i>
                   </a>
 
-                  <a href="mailto:nisaanth2000@gmail.com" target="_blank">
+                  <a
+                    href="mailto:nisaanth2000@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Email"
+                  >
                     <i class="fas fa-envelope"></i>
                   </a>
                 </div>
@@ -424,15 +395,16 @@
             </div>
 
             <div class="right-contact">
-              <!-- keep your existing form UI -->
               <form action="#" class="contact-form" onsubmit="return false;">
                 <div class="input-control i-c-2">
                   <input type="text" required placeholder="YOUR NAME" />
                   <input type="email" required placeholder="YOUR EMAIL" />
                 </div>
+
                 <div class="input-control">
                   <input type="text" required placeholder="ENTER SUBJECT" />
                 </div>
+
                 <div class="input-control">
                   <textarea
                     cols="15"
@@ -440,9 +412,10 @@
                     placeholder="Message Here..."
                   ></textarea>
                 </div>
+
                 <div class="submit-btn">
                   <a href="mailto:nisaanth2000@gmail.com" class="main-btn">
-                    <span class="btn-text" data-i18n="btn_send">Send</span>
+                    <span class="btn-text" data-i18n="btn_send"></span>
                     <span class="btn-icon"
                       ><i class="fas fa-paper-plane"></i
                     ></span>
@@ -455,25 +428,38 @@
       </section>
     </main>
 
+    <!-- RIGHT CONTROLS -->
     <div class="controls">
-      <div class="lang-switch">
-        <button class="lang-btn active-lang" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="de">DE</button>
-      </div>
-      <div class="control active-btn" data-id="home">
+      <button
+        class="control lang-control"
+        id="langToggle"
+        type="button"
+        aria-label="Switch language"
+      >
+        <span class="lang-label">EN</span>
+      </button>
+
+      <div class="control active-btn" data-id="home" aria-label="Home">
         <i class="fas fa-home"></i>
       </div>
-      <div class="control" data-id="about"><i class="fas fa-user"></i></div>
-      <div class="control" data-id="portfolio">
+
+      <div class="control" data-id="about" aria-label="About">
+        <i class="fas fa-user"></i>
+      </div>
+
+      <div class="control" data-id="portfolio" aria-label="Portfolio">
         <i class="fas fa-briefcase"></i>
       </div>
-      <div class="control" data-id="contact">
+
+      <div class="control" data-id="contact" aria-label="Contact">
         <i class="fas fa-envelope-open"></i>
       </div>
     </div>
-    <div class="theme-btn">
+
+    <div class="theme-btn" aria-label="Toggle theme">
       <i class="fas fa-adjust"></i>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>
