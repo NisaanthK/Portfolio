@@ -75,20 +75,6 @@ section {
   display: block;
 }
 
-.active {
-  display: block;
-  animation: appear 1s ease-in-out;
-  transform: translateY(0) scaleY(1);
-}
-@keyframes appear {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
-}
-
 .controls {
   position: fixed;
   z-index: 10;
@@ -118,11 +104,11 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
-.controls .active-btn {
+.controls .control.active-btn:not(.lang-control) {
   background-color: var(--color-secondary);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.controls .active-btn i {
+.controls .control.active-btn:not(.lang-control) i {
   color: var(--color-white);
 }
 /* Round language control (EN/DE) */
@@ -138,7 +124,6 @@ section {
 .controls .lang-control .lang-label {
   font-weight: 800;
   font-size: 0.95rem;
-  letter-spacing: 0.5px;
   color: var(--color-grey-2);
   pointer-events: none;
 }
@@ -723,10 +708,13 @@ section {
     padding: 0 !important;
   }
 
-  .theme-btn {
-    width: 50px;
-    height: 50px;
-  }
+ .theme-btn {
+  top: 12px;
+  right: 12px;
+  width: 50px;
+  height: 50px;
+  z-index: 1200;
+}
 
   .header-content {
     grid-template-columns: repeat(1, 1fr);
@@ -763,19 +751,21 @@ section {
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-grey-5);
+    padding: 8px 0;          
+  gap: 6px;  
   }
   .controls .control {
     margin: 1rem 0.3rem;
   }
  .controls .lang-control {
-    position: fixed;
-    top: 12px;
-    right: 86px; 
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 12px;
+  right: 74px;  
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 1200;
+}
   .controls .lang-control .lang-label {
     font-size: 0.9rem;
   }
