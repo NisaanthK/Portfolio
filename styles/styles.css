@@ -708,7 +708,8 @@ section {
     padding: 0 !important;
   }
 
- .theme-btn {
+  /* Theme button stays top-right */
+  .theme-btn {
     position: fixed;
     top: 12px;
     right: 12px;
@@ -732,6 +733,7 @@ section {
     width: 90%;
     margin: 0 auto;
   }
+
   .right-header .name {
     font-size: 2.5rem !important;
     text-align: center;
@@ -743,51 +745,65 @@ section {
     width: 90%;
   }
 
+  /* ✅ Bottom navigation: 5 icons equal spacing */
   .controls {
-    top: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
     bottom: 0;
+    top: auto;
+
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: space-evenly; /* ⭐ equal gap */
+    align-items: center;
+
     width: 100%;
     background-color: var(--color-grey-5);
-    padding: 8px 0;
-    gap: 8px;
+    padding: 10px 0;
+    z-index: 1000;
+
+    /* remove old centering transform */
+    transform: none;
   }
-  
+
+  /* Make ALL controls same size (including lang) */
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 0;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .control {
-      margin: 0;     
-      width: 52px;
-      height: 52px;
-      padding: 0;        
-    }
-  .lang-control {
-      position: fixed;
-      top: 12px;
-      left: 12px;       
-      width: 50px;
-      height: 50px;
-      margin: 0;
-      z-index: 1200;
-    }
-  
+
+  /* ✅ Language button behaves like a normal icon in the bar */
+  .controls .lang-control {
+    position: static;   /* ⭐ IMPORTANT */
+    width: 52px;
+    height: 52px;
+  }
+
   .controls .lang-control .lang-label {
     font-size: 0.9rem;
+    font-weight: 700;
   }
+
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 2.5rem;
   }
+
   .about-container .left-about {
     padding-right: 0;
   }
+
   .about-container .left-about p {
     padding-left: 0;
   }
@@ -819,6 +835,7 @@ section {
   .contact-content-con {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
@@ -841,13 +858,16 @@ section {
     flex-direction: column;
     margin: 1rem 0;
   }
+
   .contact-item p {
     font-size: 15px;
     color: var(--color-grey-2);
   }
+
   .contact-item span {
     font-size: 15px;
   }
+
   .contact-item .icon {
     grid-template-columns: 25px 1fr;
   }
@@ -855,13 +875,16 @@ section {
   .main-title h2 {
     font-size: 2rem;
   }
+
   .main-title h2 span {
     font-size: 2.3rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 2.3rem;
   }
 }
+
 @media screen and (max-width: 1432px) {
   .container {
     padding: 7rem 11rem;
@@ -870,6 +893,7 @@ section {
   .contact-content-con {
     flex-direction: column;
   }
+
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
@@ -892,6 +916,7 @@ section {
     font-size: 5.5rem;
   }
 }
+
 @media screen and (max-width: 1250px) {
   .blogs {
     grid-template-columns: repeat(2, 1fr);
@@ -906,6 +931,7 @@ section {
     padding-right: 9rem;
   }
 }
+
 @media screen and (max-width: 660px) {
   .blogs {
     grid-template-columns: repeat(1, 1fr);
@@ -915,10 +941,12 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media screen and (max-width: 1070px) {
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .about-container .right-about {
     padding-top: 2.5rem;
   }
@@ -926,13 +954,16 @@ section {
   .main-title h2 {
     font-size: 4rem;
   }
+
   .main-title h2 span {
     font-size: 4rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 4.5rem;
   }
 }
+
 @media screen and (max-width: 970px) {
   .container {
     padding: 7rem 6rem;
@@ -950,6 +981,7 @@ section {
   .left-header .h-shape {
     display: none;
   }
+
   .left-header .image {
     width: 90% !important;
     margin: 0 auto !important;
@@ -961,12 +993,14 @@ section {
     width: 90%;
     margin: 0 auto;
   }
+
   .right-header .name {
     font-size: 2.5rem !important;
     text-align: center;
     padding-top: 3rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   .container {
     padding: 7rem 3rem;
@@ -987,12 +1021,15 @@ section {
   .main-title h2 {
     font-size: 3rem;
   }
+
   .main-title h2 span {
     font-size: 3rem;
   }
+
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
