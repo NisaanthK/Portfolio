@@ -784,11 +784,20 @@ header.container {
     width: 100%;
     justify-content: center;
     background-color: var(--color-grey-5);
-    padding: 6px 0;
+    padding: 8px 0;
+    gap: 6px;  
   }
   .controls .control {
     margin: 0.5rem 0.25rem;
   }
+   .controls .lang-control {
+  position: fixed;
+  top: 12px;
+  right: 74px;  
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 1200;}
   .portfolios {
     grid-template-columns: 1fr;
   }
